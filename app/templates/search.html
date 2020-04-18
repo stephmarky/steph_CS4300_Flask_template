@@ -33,7 +33,18 @@
                 <p>{{d}}</p>
             {% endfor %}
         {% endif %}
+
         </form>
+
+        <!-- EXAMPLE of template in template -->
+        <div class='container'>
+            {% for item in testlist%}
+                <!--1 result-item-->
+                {% include 'result.html' %}
+            {% endfor %}
+        </div>
+
+
     </body>
 
 </html>
